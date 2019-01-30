@@ -57,3 +57,67 @@ nav span {
   font-weight: bold;
   margin-top: 10rem;
 }
+
+/*Visuals*/
+
+.visuals-container {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.visuals {
+  display: flex;
+  flex-direction: column;
+  /*justify-content: flex-start;*/
+  height: 8rem;
+}
+
+.exams, .fittings, .delivery {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+
+.exams {
+  width: 9.5rem;
+
+}
+
+.exams img {
+  width: 3.5rem;
+  padding: 0rem 3rem;
+}
+
+.fittings img {
+  width: 5rem;
+  padding: 0rem 3rem;
+}
+
+.delivery img {
+  width: 5rem;
+  padding: 0rem 3rem;
+}
+
+
+/*Other pertinent info*/
+
+.heading {
+  width: 10rem;
+}
+
+.heading span {
+  color: white;
+  background-color: cadetblue;
+  font-weight: bold;
+  font-size: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.25rem;
+  padding-right: auto;
+}
+
+/*footer*/
