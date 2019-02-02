@@ -44,9 +44,15 @@ header {
 
 nav span {
   padding-right: 2rem;
-  display: inline-flex;
 }
 
+
+.slogan-container {
+  display: flex;
+  width: 960px;
+  justify-content: flex-end;
+  margin-right: -2rem;
+}
 
 .slogan {
   display: flex;
@@ -67,7 +73,7 @@ nav span {
   justify-content: center;
 }
 
-.visuals {
+.visual {
   display: flex;
   flex-direction: column;
   /*justify-content: flex-start;*/
@@ -105,19 +111,52 @@ nav span {
 
 /*Other pertinent info*/
 
+.info-container {
+  width: 960px;
+  display: flex;
+}
+
+.info {
+  margin-bottom: 5rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
 .heading {
-  width: 10rem;
+  display: flex;
 }
 
 .heading span {
   color: white;
+  width: 10rem;
   background-color: cadetblue;
   font-weight: bold;
   font-size: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-left: 1.25rem;
-  padding-right: auto;
+  padding: 0.5rem 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.philosophy, .appointments {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+}
+
+.philosophy {
+  margin-right: 5%;
 }
 
 /*footer*/
+
+.footer-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  display: flex;
+  width: 960px;
+  background-color: azure;
+  padding: 4rem;
+}
