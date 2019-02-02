@@ -41,6 +41,11 @@ header {
   padding-bottom: 1rem;
 }
 
+.menu {
+  display: none;
+  padding-right: 2rem;
+}
+
 
 nav span {
   padding-right: 2rem;
@@ -76,7 +81,6 @@ nav span {
 .visual {
   display: flex;
   flex-direction: column;
-  /*justify-content: flex-start;*/
   height: 8rem;
 }
 
@@ -159,4 +163,144 @@ footer {
   width: 960px;
   background-color: azure;
   padding: 4rem;
+}
+
+/*Size adjustments for different screen sizes*/
+
+
+/*tablet, smaller browser window*/
+@media only screen and (max-width: 960px){
+
+  header {
+    height: 22rem;
+    width: 100%;
+  }
+
+  .header-bar {
+    margin-top: 0px;
+    width: 100%;
+  }
+
+  .slogan-container {
+    width: 100%;
+    margin-right: 2rem;
+  }
+
+  .slogan {
+    padding: 0.75rem 4rem;
+    font-size: 1.33rem;
+    margin-top: 5rem;
+  }
+
+  .info-container {
+    width: 100%;
+  }
+
+  .info {
+    justify-content: center;
+  }
+
+  footer {
+    width: 100%;
+  }
+
+}
+
+/*small browswer window & mobile screen size*/
+
+@media only screen and (max-width: 640px) {
+  nav {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+  }
+
+  .logo-name span {
+    display: none;
+  }
+
+  header {
+    height: 17rem;
+    background-position: left;
+  }
+
+  .slogan-container {
+    width: 100%;
+    margin: 0px;
+    justify-content: center;
+  }
+
+  .slogan {
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1rem;
+    justify-content: center;
+    margin-top: 9rem;
+  }
+
+  .visuals-container {
+    margin-top: 3.77rem;
+    margin-bottom: 3.77rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .exams, .fittings, .delivery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.77rem;
+  }
+
+  .exams {
+    width: 9.5rem;
+    margin-bottom: 1.54rem;
+  }
+
+  .info {
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .heading span {
+    padding: 0.5rem auto;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .philosophy, .appointments {
+    width: 100%;
+  }
+
+  .philosophy p {
+    display: flex;
+    justify-content: center;
+    font-size: 0.77rem;
+    padding-left: 0.25rem;
+  }
+
+  .appointments p {
+    display: flex;
+    justify-content: center;
+    font-size: 0.77rem;
+    padding-left: 0.25rem;
+  }
+
+  .philosophy {
+    margin-right: 0;
+    margin-bottom: 4rem;
+  }
+
+
 }
